@@ -1,0 +1,33 @@
+
+
+.container-sidebar{
+    z-index: 10;
+    padding: 1rem 1rem;
+    min-height: 100vh;
+    min-width: 100%;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container-sidebar.frio{
+    background: url('../Img/frio.jpg');
+    background-size: cover;
+}
+.container-sidebar.caluroso{
+    background: url('../Img/caluroso.jpg');
+    background-size: cover;
+}
+.container-sidebar.templado{
+    background: url('../Img/templado.jpg');
+    background-size: cover;
+}
+.container-sidebar .head-sidebar{
+    padding: 1rem 1rem;
+    background: red;
+}
+.container-sidebar .content-sidebar{
+    padding: 1rem 1rem;
+    background: blue;
+}
+
