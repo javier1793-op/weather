@@ -1,3 +1,8 @@
+#root{
+    --color-black: #fbfcfc;
+    --color-white: #5d6d7e;
+}
+
 .App{
     display: grid;
     grid-template-columns: repeat(2, 25% 1fr);
@@ -8,5 +13,5 @@
     grid-column: 1/2;
 }
 .content{
-    grid-column: 2/3;
+    grid-column: 2/5;
 }

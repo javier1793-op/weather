@@ -14,14 +14,27 @@ const Sidebar = () => {
   return (
     <>
       <div className={`container-sidebar ${temp}`}>
-        
-        <div className="head-sidebar">
-            aca la ciudad y lo demas
-        </div>
         <div className="content-sidebar">
-            aca la temperatura
+          <div className="head-sidebar">
+            <div className="city">
+            <span>Resistencia</span>
+            <span>Chaco</span>
+            </div>
+            <span className="time">
+              12:00 AM
+            </span>
+          </div>
+          <div className="temp-sidebar">
+          <div className="temp">
+            <span>icono</span>
+            <span><b>15</b> °C</span>
+            </div>
+            <span className="state">
+              Soleado
+            </span>
+          </div>
         </div>
-        </div>
+      </div>
     </>
   );
 };

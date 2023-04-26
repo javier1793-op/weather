@@ -1,0 +1,36 @@
+
+.widgetContainer{
+    width: 90%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 2rem;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+.widgetContainer .iconWind{
+    font-size: 40px;
+    color: #3498db;
+}
+.widgetContainer .widgetContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+}
+.widgetContent .data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.data span{
+    font-size: 30px;
+}
+.widgetContent h3{
+    opacity: 60%;
+    font-size: 18px;
+}
