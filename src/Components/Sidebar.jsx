@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Css/sidebar.scss";
 
-const Sidebar = ({date,weather}) => {
+const Sidebar = ({date,weather,setCity, handleSubmit}) => {
   const [temp, setTemp] = useState();
   const temp1 = weather.temperature;
 
@@ -38,6 +38,7 @@ const Sidebar = ({date,weather}) => {
             </span>
           </div>
         </div>
+        
       </div>
     </>
   );

@@ -11,7 +11,18 @@
 
 .sidebar{
     grid-column: 1/2;
+    height: 100%;
 }
 .content{
     grid-column: 2/5;
+}
+
+@media  (max-width: 920px){
+    .sidebar{
+        grid-column: 1/5;
+    }
+    .content{
+        grid-column: 1/5;
+    }
+
 }

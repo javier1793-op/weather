@@ -2,6 +2,7 @@ import React from "react";
 import "../Css/home.scss";
 import Search from "./Search";
 import Widget from "./Widget";
+import { FcCopyright } from "react-icons/fc";
 
 const Home = ({setCity, handleSubmit,weather,date}) => {
   return (
@@ -43,6 +44,16 @@ const Home = ({setCity, handleSubmit,weather,date}) => {
           title={'thermal sensation'}
           />
         </div>
+      </div>
+      <div className="footer">
+        <FcCopyright/>
+      <a
+          href="https://www.weatherapi.com/"
+          title="Weather API"
+          target="_blank"
+        >
+          WeatherAPI.com
+        </a>
       </div>
     </div>
   );
