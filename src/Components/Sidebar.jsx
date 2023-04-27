@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Css/sidebar.scss";
 
-const Sidebar = () => {
+const Sidebar = ({date,weather}) => {
   const [temp, setTemp] = useState();
-  const temp1 = 22;
+  const temp1 = weather.temperature;
+
+  console.log(date)
 
   useEffect(() => {
     if (temp1 >= 18 && temp1 <= 25) return setTemp("templado");
@@ -17,20 +19,22 @@ const Sidebar = () => {
         <div className="content-sidebar">
           <div className="head-sidebar">
             <div className="city">
-            <span>Resistencia</span>
-            <span>Chaco</span>
+            <span>{weather.city}</span>
+            <span>{weather.region}</span>
             </div>
             <span className="time">
-              12:00 AM
+              {`${date.hour} hr`}
             </span>
           </div>
           <div className="temp-sidebar">
           <div className="temp">
-            <span>icono</span>
-            <span><b>15</b> °C</span>
+            <span>
+              {weather.icon === ''?'':<img src={weather.icon} alt="icon-weather" />}
+              </span>
+            <span><b>{weather.temperature}</b> °C</span>
             </div>
             <span className="state">
-              Soleado
+              {weather.conditionText}
             </span>
           </div>
         </div>

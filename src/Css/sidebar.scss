@@ -62,9 +62,13 @@
 }
 .content-sidebar .temp-sidebar .temp{
    display: flex;
-   gap: 1rem;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
+}
+.temp img{
+    width: 100px;
+    height: 100px;
 }
 .temp span:nth-child(1){
     font-size: 25px;

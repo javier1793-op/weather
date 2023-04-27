@@ -10,7 +10,7 @@
             case '2':
             return sign='%';
             case '3':
-            return sign='°C';
+            return sign='%';
             case '4':
             return sign='°C';
             default:

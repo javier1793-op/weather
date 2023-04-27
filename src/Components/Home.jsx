@@ -3,13 +3,13 @@ import "../Css/home.scss";
 import Search from "./Search";
 import Widget from "./Widget";
 
-const Home = ({setCity, handleSubmit,weather}) => {
+const Home = ({setCity, handleSubmit,weather,date}) => {
   return (
     <div className="containerHome">
       <div className="headHome">
         <div className="date">
-          <span>Abirl 2022</span>
-          <span>Jueves 20</span>
+          <span>{`${date.monthletters}  ${date.year}`}</span>
+          <span>{`${date.dayletters}  ${date.day}`}</span>
         </div>
         <Search setCity={setCity} handleSubmit={handleSubmit}/>
       </div>
@@ -17,26 +17,30 @@ const Home = ({setCity, handleSubmit,weather}) => {
       <div className="contentHome">
         <div className="widget">
           <Widget 
+          data={weather.wind_kph}
           mod={'1'}
           title={'wind Speed'}
           />
         </div>
         <div className="widget">
           <Widget 
+          data={weather.precip_mm}
           mod={'2'}
           title={'Rain Chanse'}
           />
         </div>
         <div className="widget">
           <Widget 
+          data={weather.humidity}
           mod={'3'} 
-          title={'maxi temperature'}
+          title={'humidity'}
           />
         </div>
         <div className="widget">
           <Widget 
+          data={weather.sensation}
           mod={'4'}
-          title={'min temperature'}
+          title={'thermal sensation'}
           />
         </div>
       </div>
