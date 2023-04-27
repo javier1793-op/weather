@@ -21,7 +21,7 @@ export const useWeather = () => {
     sensation: "",
   });
 
-  const api = `http://api.weatherapi.com/v1/current.json?key=${
+  const api = `https://api.weatherapi.com/v1/current.json?key=${
     import.meta.env.VITE_APY_KEY
   }&lang=es&q=`;
 
