@@ -29,6 +29,7 @@ const Sidebar = ({date,weather,setCity, handleSubmit}) => {
           <div className="temp-sidebar">
           <div className="temp">
             <span>
+              {weather.icon === ''?'':<img src={weather.icon} alt="icon-weather" />}
               </span>
             <span><b>{weather.temperature}</b> °C</span>
             </div>
